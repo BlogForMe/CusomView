@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.TextviewBorderActivity">
+
+    <com.jonzhou.cusomview.view.BorderTextView
+        android:id="@+id/btv_rect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@mipmap/box_xrcode_next"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="点我\n收起"
+        android:textColor="@android:color/white"
+        app:contentBackColor="@android:color/holo_blue_dark"
+        app:cornerRadius="30dp" />
+
+    <com.jonzhou.cusomview.view.BorderTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@mipmap/box_xrcode_next"
+        android:drawablePadding="10dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="点我\n收起"
+        android:textColor="@android:color/white"
+        app:contentBackColor="@android:color/holo_blue_dark"
+        app:bottomRight="20dp"
+        app:topRight="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="modifyColor"
+        android:text="修改颜色" />
+
+
+</LinearLayout>

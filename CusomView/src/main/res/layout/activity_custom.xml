@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CustomActivity">
+
+    <!-- <com.jonzhou.cusomview.view.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright" />
+
+   <com.jonzhou.cusomview.view.PieChart
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:showText="false" />-->
+    <com.jonzhou.cusomview.view.CustomProgress
+        android:id="@+id/cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bigCircleColor="@android:color/holo_blue_dark"
+        app:circleColor="@android:color/holo_red_light"
+        app:radius="50dp"
+        app:ringColor="@android:color/holo_orange_dark"
+        app:totalProgress="100" />
+
+    <com.jonzhou.cusomview.view.BLTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="就覅经济法"/>
+
+
+</LinearLayout>
